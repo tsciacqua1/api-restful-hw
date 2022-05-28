@@ -7,11 +7,14 @@
     <title>CoderHouse HW Restful API</title>
   </head>
   <body>
-    <form action="POST" method="/api/products">
-      <input type="text" placeholder="title" name="title" />
-      <input type="number" placeholder="price" name="price" />
-      <input type="text" placeholder="thumbnail" name="thumbnail" />
-      <input type="submit" value="upload" />
-    </form>
+    <div class="form">
+      <h3>Create new product</h3>
+      <form class="form-post" action="/api/products" method="post">
+        <input type="text" placeholder="title" name="title" required />
+        <input type="number" placeholder="price" name="price" required />
+        <input type="text" placeholder="thumbnail" name="thumbnail" required />
+        <input type="submit" value="upload" />
+      </form>
+    </div>
   </body>
 </html>
